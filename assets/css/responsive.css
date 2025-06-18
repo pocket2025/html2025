@@ -1,0 +1,128 @@
+@media (min-width: 1400px) {
+   .container,
+   .container-lg,
+   .container-md,
+   .container-sm,
+   .container-xl,
+   .container-xxl {
+      max-width: 1416px;
+   }
+}
+
+@media (max-width: 1599px) {
+   .survey-img {
+      width: 400px;
+   }
+}
+
+/* 
+  Extra large devices (less than 1400px)
+*/
+@media (max-width: 1399px) {
+   .survey-img {
+      width: 310px;
+   }
+   .sidebar {
+      width: 248px;
+   }
+   .dashboard__main {
+      padding: 52px 40px;
+   }
+   .dashboard__card {
+      padding: 16px 20px;
+   }
+}
+
+/* 
+  Large devices (less than 1200px)
+*/
+@media (max-width: 1199px) {
+   .signup__left {
+      padding: 40px;
+   }
+   .testimonial-slider__container {
+      padding: 40px;
+   }
+   .survey-img {
+      width: 200px;
+   }
+   .dashboard__main {
+      padding: 40px 32px;
+   }
+   .dashboard__card {
+      padding: 16px;
+   }
+   .dashboard__cards .row {
+      --bs-gutter-x: 16px;
+      --bs-gutter-y: 16px;
+   }
+}
+
+/* 
+  Medium devices (less than 992px)
+*/
+@media (max-width: 991px) {
+   .header__btn {
+      font-size: 14px;
+   }
+   .signup__wrapper {
+      grid-template-columns: 1fr;
+   }
+   .signup__left-wrapper {
+      max-width: 100%;
+   }
+   .testimonial-slider {
+      max-width: 100%;
+   }
+   .sidebar {
+      width: 288px;
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      z-index: 1050;
+      margin-left: -300px;
+   }
+   .sidebar.show {
+      margin-left: 0;
+   }
+}
+
+/* 
+  Small devices (less than 768px)
+*/
+@media (max-width: 767px) {
+   .header__logo-icon {
+      width: 20px;
+   }
+   .header__logo {
+      font-size: 16px;
+   }
+   .header__btn {
+      padding: 8px 12px;
+      font-size: 12px;
+   }
+   .signup__left {
+      padding: 40px 20px;
+   }
+   .testimonial-slider__container {
+      padding: 40px 20px;
+   }
+   .section-title__title {
+      font-size: 26px;
+   }
+   .theme-btn {
+      padding: 10px 20px;
+   }
+   .section-title__desc--lg {
+      font-size: 16px;
+   }
+   .dashboard__main {
+      padding: 40px 20px;
+   }
+}
+
+/* 
+  Extra small devices (less than 576px)
+*/
+@media (max-width: 575px) {
+}

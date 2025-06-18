@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Title -->
+      <title>Dashboard | PocketLedger</title>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+      <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+      <!-- vendor css -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
+      <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+      <link rel="stylesheet" href="assets/css/aos.css">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/responsive.css">
+   </head>
+
+   <body>
+      <!-- header section start -->
+      <header class="header">
+         <div class="container-xxl">
+            <div class="header__wrapper d-flex align-items-center justify-content-between">
+               <div class="header__left d-flex align-items-center gap-3">
+                  <button type="button" title="sidebar toggle" class="sidebar-toggle d-flex d-lg-none bg-transparent border-0"><i class="fa-regular fa-bars"></i></button>
+                  <a href="index.html" class="header__logo d-inline-flex align-items-center fw-bold">
+                     <img src="assets/img/icon/logo-icon.svg" alt="logo icon" class="header__logo-icon">
+                     <span class="header__logo-text">PocketLedger</span>
+                  </a>
+               </div>
+               <a href="#" class="header__btn d-inline-flex align-items-center rounded-pill"><span><span class="d-none d-md-inline-block">Welcome</span> Sarah W. Davidson</span><span class="d-flex"><i class="fa-regular fa-angle-down"></i></span></a>
+            </div>
+         </div>
+      </header>
+      <!-- header section end -->
+      <main>
+         <!-- dashboard section start -->
+         <section class="dashboard">
+            <div class="dashboard__wrapper d-flex">
+               <!-- sidebar start -->
+               <aside class="sidebar flex-shrink-0">
+
+                  <button title="sidebar toggle" type="button" class="sidebar__collapse-btn d-none d-lg-flex align-items-center justify-content-center position-absolute end-0"><i class="fa-regular fa-angle-left"></i></button>
+                  <button title="sidebar toggle" type="button" class="sidebar__close-btn d-flex d-lg-none align-items-center justify-content-center position-absolute end-0"><i class="fa-regular fa-xmark"></i></button>
+                  <div class="sidebar__wrapper d-flex flex-column">
+                     <div class="sidebar__block">
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Inbox"><img src="assets/img/icon/envelope.svg" alt="envelope" class="sidebar__menu-icon"><span class="sidebar__menu-text">Inbox</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Today Reminder"><img src="assets/img/icon/bell.svg" alt="bell" class="sidebar__menu-icon"><span class="sidebar__menu-text">Today Reminder</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">Family Circle</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Family Members"><img src="assets/img/icon/users.svg" alt="users" class="sidebar__menu-icon"><span class="sidebar__menu-text">Family Members</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Personal Info & ID"><img src="assets/img/icon/chart.svg" alt="chart" class="sidebar__menu-icon"><span class="sidebar__menu-text">Personal Info & ID</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Property & Assets"><img src="assets/img/icon/layers.svg" alt="layer" class="sidebar__menu-icon"><span class="sidebar__menu-text">Property & Assets</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">Finance Circle</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Loan & Credit Card"><img src="assets/img/icon/credit-card.svg" alt="credit-card" class="sidebar__menu-icon"><span class="sidebar__menu-text">Loan & Credit Card</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Banking"><img src="assets/img/icon/bank.svg" alt="bank" class="sidebar__menu-icon"><span class="sidebar__menu-text">Banking</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Trading"><img src="assets/img/icon/trending-up.svg" alt="trending-up" class="sidebar__menu-icon"><span class="sidebar__menu-text">Trading</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Budgeting"><img src="assets/img/icon/chart-2.svg" alt="chart" class="sidebar__menu-icon"><span class="sidebar__menu-text">Budgeting</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Teen Banking"><img src="assets/img/icon/building.svg" alt="building" class="sidebar__menu-icon"><span class="sidebar__menu-text">Teen Banking</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">Collaborate & Nominee</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Collaborator"><img src="assets/img/icon/virus.svg" alt="virus" class="sidebar__menu-icon"><span class="sidebar__menu-text">Collaborator</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Nominee"><img src="assets/img/icon/award.svg" alt="award" class="sidebar__menu-icon"><span class="sidebar__menu-text">Nominee</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">Legal & Wills</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Digital Will"><img src="assets/img/icon/feather.svg" alt="feather" class="sidebar__menu-icon"><span class="sidebar__menu-text">Digital Will</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Power of Attorney"><img src="assets/img/icon/shield.svg" alt="shield" class="sidebar__menu-icon"><span class="sidebar__menu-text">Power of Attorney</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">PERSONAL CRM</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Your Contacts"><img src="assets/img/icon/clipboard.svg" alt="clipboard" class="sidebar__menu-icon"><span class="sidebar__menu-text">Your Contacts</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Family Resources"><img src="assets/img/icon/information.svg" alt="information" class="sidebar__menu-icon"><span class="sidebar__menu-text">Family Resources</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">My settings</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="My Profile"><img src="assets/img/icon/user.svg" alt="user" class="sidebar__menu-icon"><span class="sidebar__menu-text">My Profile</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Change Password"><img src="assets/img/icon/lock.svg" alt="lock" class="sidebar__menu-icon"><span class="sidebar__menu-text">Change Password</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Billing & Payments"><img src="assets/img/icon/dollar.svg" alt="dollar" class="sidebar__menu-icon"><span class="sidebar__menu-text">Billing & Payments</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Logoff"><img src="assets/img/icon/log-out.svg" alt="log-out" class="sidebar__menu-icon"><span class="sidebar__menu-text">Logoff</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </aside>
+               <div class="sidebar__overlay fixed-top w-100 h-100 d-lg-none"></div>
+               <!-- sidebar end -->
+               <div class="dashboard__main flex-grow-1">
+                  <div class="dashboard__main-wrapper mx-auto">
+                     <div class="dashboard__block">
+                        <div class="section-title mb-4">
+                           <h2 class="section-title__title section-title__title--primary fw-bold mb-3">Good Morning Sarah</h2>
+                           <p class="section-title__desc mb-0">Congrats on taking the first step towards getting everything in your life organised once and for all.The next few pages will gather general information so we an personalise your Pocket Ledger experience</p>
+                        </div>
+                        <div class="dashboard__cards">
+                           <div class="row">
+                              <div class="col-6 col-md-3">
+                                 <div class="dashboard__card d-flex flex-column justify-content-between align-items-start">
+                                    <img src="assets/img/icon/upload.svg" alt="upload" class="upload__icon">
+                                    <p class="mb-0 text-black"><button type="button" class="link-text text-decoration-underline bg-transparent border-0">Browser</button> & Upload Fvile</p>
+                                 </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                 <div class="dashboard__card d-flex flex-column justify-content-between align-items-start">
+                                    <img src="assets/img/icon/upload.svg" alt="upload" class="upload__icon">
+                                    <p class="mb-0 text-black">Search 29 items</p>
+                                 </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                 <div class="dashboard__card d-flex flex-column justify-content-between align-items-start">
+                                    <img src="assets/img/icon/upload.svg" alt="upload" class="upload__icon">
+                                    <p class="mb-0 text-black">1 Reminder</p>
+                                 </div>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                 <div class="dashboard__card d-flex flex-column justify-content-between align-items-start">
+                                    <img src="assets/img/icon/upload.svg" alt="upload" class="upload__icon">
+                                    <p class="mb-0 text-black">1 Collaborate</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="dashboard__block service">
+                        <div class="dashboard__block-title mb-4">
+                           <h4 class="text-black fw-bold mb-3">Getting started</h4>
+                           <p class="mb-0">Congrats on taking the first step towards getting everything in your life organised once and for all.The next few pages will gather general information so we an personalise your Pocket Ledger experience</p>
+                        </div>
+                        <div class="service__slider swiper">
+                           <div class="service__slider-wrapper swiper-wrapper">
+                              <a href="#" class="service__card dashboard__card swiper-slide d-flex flex-column justify-content-between align-items-start text-black">
+                                 <img src="assets/img/icon/id-card.svg" alt="id" class="nid__icon">
+                                 <div class="dashboard__card-content">
+                                    <h6 class="fw-bold mb-2">Add your Identification</h6>
+                                    <p class="mb-0">Store securely, Autopilot™ finds the key details and creates reminders.</p>
+                                 </div>
+                              </a>
+                              <a href="#" class="service__card dashboard__card swiper-slide d-flex flex-column justify-content-between align-items-start text-black">
+                                 <img src="assets/img/icon/id-card.svg" alt="id" class="nid__icon">
+                                 <div class="dashboard__card-content">
+                                    <h6 class="fw-bold mb-2">Banking & Insurance</h6>
+                                    <p class="mb-0">Store securely, Autopilot™ finds the key details and creates reminders.</p>
+                                 </div>
+                              </a>
+                              <a href="#" class="service__card dashboard__card swiper-slide d-flex flex-column justify-content-between align-items-start text-black">
+                                 <img src="assets/img/icon/id-card.svg" alt="id" class="nid__icon">
+                                 <div class="dashboard__card-content">
+                                    <h6 class="fw-bold mb-2">Invite first collaborator & Nominee</h6>
+                                    <p class="mb-0">Store securely, Autopilot™ finds the key details and creates reminders.</p>
+                                 </div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="dashboard__block quick-links">
+                        <div class="dashboard__block-title mb-4">
+                           <h5 class="text-black fw-bold mb-0">Quick links</h5>
+                        </div>
+                        <div class="dashboard__cards">
+                           <div class="row">
+                              <div class="col-6 col-md-3">
+                                 <a href="#" class="dashboard__card quick-links__card d-flex flex-column justify-content-between align-items-start text-black">
+                                    <img src="assets/img/icon/upload.svg" alt="upload" class="upload__icon">
+                                    <p class="mb-0">Get Help</p>
+                                 </a>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                 <a href="#" class="dashboard__card quick-links__card d-flex flex-column justify-content-between align-items-start text-black">
+                                    <img src="assets/img/icon/upload.svg" alt="upload" class="upload__icon">
+                                    <p class="mb-0">Send Feedback</p>
+                                 </a>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                 <a href="#" class="dashboard__card quick-links__card d-flex flex-column justify-content-between align-items-start text-black">
+                                    <img src="assets/img/icon/upload.svg" alt="upload" class="upload__icon">
+                                    <p class="mb-0">Refer and Earn</p>
+                                 </a>
+                              </div>
+                              <div class="col-6 col-md-3">
+                                 <a href="#" class="dashboard__card quick-links__card d-flex flex-column justify-content-between align-items-start text-black">
+                                    <img src="assets/img/icon/upload.svg" alt="upload" class="upload__icon">
+                                    <p class="mb-0">What is New</p>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="dashboard__block guide">
+                        <div class="dashboard__block-title mb-4">
+                           <h4 class="text-black fw-bold mb-0">Guides for your family</h4>
+                        </div>
+                        <div class="dashboard__cards">
+                           <div class="row">
+                              <div class="col-sm-6">
+                                 <a href="#" class="guide__card dashboard__card d-flex flex-column justify-content-between align-items-start p-0 border-0 rounded-0">
+                                    <div class="dashboard__card-thumb overflow-hidden rounded-3">
+                                       <img src="assets/img/thumb/guide-thumb-1.jpg" alt="guide thumb" class="w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="dashboard__card-content">
+                                       <h6 class="fw-bold mb-2">Our Disaster Planning Guide</h6>
+                                       <p class="mb-0">A prepared family is a safer family. Here’s how to organize before the unexpected strikes.</p>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-sm-6">
+                                 <a href="#" class="guide__card dashboard__card d-flex flex-column justify-content-between align-items-start p-0 border-0 rounded-0">
+                                    <div class="dashboard__card-thumb overflow-hidden rounded-3">
+                                       <img src="assets/img/thumb/guide-thumb-1.jpg" alt="guide thumb" class="w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div class="dashboard__card-content">
+                                       <h6 class="fw-bold mb-2">Our Disaster Planning Guide</h6>
+                                       <p class="mb-0">A prepared family is a safer family. Here’s how to organize before the unexpected strikes.</p>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- dashboard section end -->
+      </main>
+      <!-- footer section start -->
+      <footer class="footer">
+         <div class="container-xxl">
+            <p class="footer__copyright mb-0">© 1996-2025, Pocket Ledger.in, Private Limited. or its affiliates</p>
+         </div>
+      </footer>
+      <!-- footer section end -->
+      <!-- vendor js -->
+      <script src="assets/js/jquery-3.7.1.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/aos.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <!-- main js -->
+      <script src="assets/js/main.js"></script>
+   </body>
+
+</html>
