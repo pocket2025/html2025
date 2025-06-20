@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Title -->
-      <title>Dashboard | PocketLedger</title>
+      <title>Property & Assets | PocketLedger</title>
       <!-- favicon -->
       <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
@@ -18,8 +18,6 @@
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
       <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-      <link rel="stylesheet" href="assets/css/aos.css">
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
       <!-- main css -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
@@ -44,11 +42,10 @@
       <!-- header section end -->
       <main>
          <!-- dashboard section start -->
-         <section class="dashboard">
+         <section class="dashboard property">
             <div class="dashboard__wrapper d-flex">
                <!-- sidebar start -->
-               <aside class="sidebar flex-shrink-0">
-
+               <aside class="sidebar style-2 flex-shrink-0">
                   <button title="sidebar toggle" type="button" class="sidebar__collapse-btn d-none d-lg-flex align-items-center justify-content-center position-absolute end-0"><i class="fa-regular fa-angle-left"></i></button>
                   <button title="sidebar toggle" type="button" class="sidebar__close-btn d-flex d-lg-none align-items-center justify-content-center position-absolute end-0"><i class="fa-regular fa-xmark"></i></button>
                   <div class="sidebar__wrapper d-flex flex-column">
@@ -73,7 +70,7 @@
                               <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Personal Info & ID"><img src="assets/img/icon/chart.svg" alt="chart" class="sidebar__menu-icon"><span class="sidebar__menu-text">Personal Info & ID</span></a>
                            </li>
                            <li class="sidebar__menu-item">
-                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Property & Assets"><img src="assets/img/icon/layers.svg" alt="layer" class="sidebar__menu-icon"><span class="sidebar__menu-text">Property & Assets</span></a>
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center active" data-bs-toggle="tooltip" title="Property & Assets"><img src="assets/img/icon/layers.svg" alt="layer" class="sidebar__menu-icon"><span class="sidebar__menu-text">Property & Assets</span></a>
                            </li>
                         </ul>
                      </div>
@@ -91,10 +88,10 @@
                               <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Trading"><img src="assets/img/icon/trending-up.svg" alt="trending-up" class="sidebar__menu-icon"><span class="sidebar__menu-text">Trading</span></a>
                            </li>
                            <li class="sidebar__menu-item">
-                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Budgeting"><img src="assets/img/icon/chart-2.svg" alt="chart" class="sidebar__menu-icon"><span class="sidebar__menu-text">Budgeting</span></a>
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Budgeting"><img src="assets/img/icon/chart-2.svg" alt="chart" class="sidebar__menu-icon"><span class="sidebar__menu-text">Budgeting</span><span class="sidebar__menu-link-tag d-inline-block rounded-pill text-uppercase fw-bold">Coming soon</span></a>
                            </li>
                            <li class="sidebar__menu-item">
-                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Teen Banking"><img src="assets/img/icon/building.svg" alt="building" class="sidebar__menu-icon"><span class="sidebar__menu-text">Teen Banking</span></a>
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Teen Banking"><img src="assets/img/icon/building.svg" alt="building" class="sidebar__menu-icon"><span class="sidebar__menu-text">Teen Banking</span><span class="sidebar__menu-link-tag d-inline-block rounded-pill text-uppercase fw-bold">Coming soon</span></a>
                            </li>
                         </ul>
                      </div>
@@ -112,7 +109,7 @@
                      </div>
                      <div class="sidebar__divider"></div>
                      <div class="sidebar__block">
-                        <h6 class="sidebar__block-title fw-normal mb-3">Legal & Wills</h6>
+                        <h6 class="sidebar__block-title fw-normal mb-3 d-flex align-items-center justify-content-between"><span>Legal & Wills </span><span class="sidebar__menu-link-tag d-inline-block rounded-pill text-uppercase fw-bold">Coming soon</span></h6>
                         <ul class="sidebar__menu d-flex flex-column">
                            <li class="sidebar__menu-item">
                               <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Digital Will"><img src="assets/img/icon/feather.svg" alt="feather" class="sidebar__menu-icon"><span class="sidebar__menu-text">Digital Will</span></a>
@@ -159,165 +156,107 @@
                <div class="dashboard__main flex-grow-1">
                   <div class="dashboard__main-wrapper mx-auto">
                      <div class="dashboard__block">
-                        <div class="section-title mb-4">
-                           <h2 class="section-title__title section-title__title--primary fw-bold mb-3">Good Morning Sarah</h2>
+                        <div class="section-title mb-5">
+                           <h2 class="section-title__title section-title__title--primary fw-bold mb-3">Property & Assets</h2>
                            <p class="section-title__desc mb-0">Congrats on taking the first step towards getting everything in your life organised once and for all.The next few pages will gather general information so we an personalise your Pocket Ledger experience</p>
                         </div>
-                        <div class="dashboard__cards">
+                        <div class="property__cards">
                            <div class="row">
-                              <div class="col-6 col-md-3">
-                                 <div href="#" class="dashboard__card d-flex flex-column justify-content-between align-items-start">
-                                    <div class="dashboard__card-header d-flex align-items-center justify-content-between w-100">
-                                       <span class="count-text d-inline-block fw-semibold text-black">0</span>
-                                       <img src="assets/img/icon/file.svg" alt="file">
+                              <div class="col-md-4 col-sm-6">
+                                 <div class="property__card-container">
+                                    <h6 class="text-black fw-bold mb-2 pb-1">Real Estate</h6>
+                                    <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between w-100">
+                                       <div>
+                                          <h6 class="person-name fw-bold text-black mb-1">Davidson Family Home</h6>
+                                          <span class="person-designation d-block">Owner</span>
+                                       </div>
+                                       <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                          <a href="#" class="d-inline-block link-text">4 Items</a>
+                                          <a href="#" class="add-btn"><img src="assets/img/icon/plus-circle.svg" alt="plus circle"></a>
+                                       </div>
                                     </div>
-                                    <p class="mb-0 text-black"><button type="button" class="link-text text-decoration-underline bg-transparent border-0">Browser</button> & Upload Fvile</p>
                                  </div>
                               </div>
-                              <div class="col-6 col-md-3">
-                                 <div href="#" class="dashboard__card d-flex flex-column justify-content-between align-items-start">
-                                    <div class="dashboard__card-header d-flex align-items-center justify-content-between w-100">
-                                       <span class="count-text d-inline-block fw-semibold text-black">29</span>
-                                       <img src="assets/img/icon/search.svg" alt="search">
+                              <div class="col-md-4 col-sm-6">
+                                 <div class="property__card-container">
+                                    <h6 class="text-black fw-bold mb-2 pb-1">Investment Property</h6>
+                                    <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between w-100">
+                                       <div>
+                                          <h6 class="person-name fw-bold text-black mb-1">Davidson Investment Home</h6>
+                                          <span class="person-designation d-block">Owner</span>
+                                       </div>
+                                       <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                          <a href="#" class="d-inline-block link-text">4 Items</a>
+                                          <a href="#" class="add-btn"><img src="assets/img/icon/plus-circle.svg" alt="plus circle"></a>
+                                       </div>
                                     </div>
-                                    <p class="mb-0 text-black">Search items</p>
                                  </div>
                               </div>
-                              <div class="col-6 col-md-3">
-                                 <div href="#" class="dashboard__card d-flex flex-column justify-content-between align-items-start">
-                                    <div class="dashboard__card-header d-flex align-items-center justify-content-between w-100">
-                                       <span class="count-text d-inline-block fw-semibold text-black">2</span>
-                                       <img src="assets/img/icon/bell2.svg" alt="bell">
+                              <div class="col-md-4 col-sm-6">
+                                 <div class="property__card-container">
+                                    <h6 class="text-black fw-bold mb-2 pb-1">Vehicles</h6>
+                                    <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between w-100">
+                                       <div>
+                                          <h6 class="person-name fw-bold text-black mb-1">Davidson Car’s</h6>
+                                          <span class="person-designation d-block">Owner</span>
+                                       </div>
+                                       <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                          <a href="#" class="d-inline-block link-text">4 Items</a>
+                                          <a href="#" class="add-btn"><img src="assets/img/icon/plus-circle.svg" alt="plus circle"></a>
+                                       </div>
                                     </div>
-                                    <p class="mb-0 text-black">Reminders</p>
                                  </div>
                               </div>
-                              <div class="col-6 col-md-3">
-                                 <div href="#" class="dashboard__card d-flex flex-column justify-content-between align-items-start">
-                                    <div class="dashboard__card-header d-flex align-items-center justify-content-between w-100">
-                                       <span class="count-text d-inline-block fw-semibold text-black">1</span>
-                                       <img src="assets/img/icon/virus2.svg" alt="virus">
+                              <div class="col-md-4 col-sm-6">
+                                 <div class="property__card-container">
+                                    <h6 class="text-black fw-bold mb-2 pb-1">Home Safes</h6>
+                                    <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between w-100">
+                                       <div>
+                                          <h6 class="person-name fw-bold text-black mb-1 d-flex gap-1">
+                                             <span>Davidson Safes</span>
+                                             <button type="button" data-bs-toggle="modal" data-bs-target="#propertyTooltipModal" class="tooltip-toggle bg-transparent border-0"><img src="assets/img/icon/question-circle.svg" alt="question circle"></button>
+                                          </h6>
+                                          <span class="person-designation d-block">Owner</span>
+                                       </div>
+                                       <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                          <a href="#" class="d-inline-block link-text">4 Items</a>
+                                          <a href="#" class="add-btn"><img src="assets/img/icon/plus-circle.svg" alt="plus circle"></a>
+                                       </div>
                                     </div>
-                                    <p class="mb-0 text-black">Collaborate</p>
                                  </div>
                               </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="dashboard__block service">
-                        <div class="dashboard__block-title mb-4">
-                           <h4 class="text-black fw-bold mb-3">Getting started</h4>
-                           <p class="mb-0">Congrats on taking the first step towards getting everything in your life organised once and for all.The next few pages will gather general information so we an personalise your Pocket Ledger experience</p>
-                        </div>
-                        <div class="service__slider swiper">
-                           <div class="service__slider-wrapper swiper-wrapper">
-                              <a href="#" class="service__card min-h-0 dashboard__card swiper-slide d-flex flex-column justify-content-between align-items-start text-black">
-                                 <img src="assets/img/icon/nid-icon-1.svg" alt="id">
-                                 <div class="dashboard__card-content">
-                                    <h6 class="fw-bold mb-2">Add your Identification</h6>
-                                    <p class="mb-0">Store securely, Autopilot™ finds the key details and creates reminders.</p>
-                                 </div>
-                              </a>
-                              <a href="#" class="service__card min-h-0 dashboard__card swiper-slide d-flex flex-column justify-content-between align-items-start text-black">
-                                 <img src="assets/img/icon/bank-2.svg" alt="bank">
-                                 <div class="dashboard__card-content">
-                                    <h6 class="fw-bold mb-2">Banking & Insurance</h6>
-                                    <p class="mb-0">Store securely, Autopilot™ finds the key details and creates reminders.</p>
-                                 </div>
-                              </a>
-                              <a href="#" class="service__card min-h-0 dashboard__card swiper-slide d-flex flex-column justify-content-between align-items-start text-black">
-                                 <img src="assets/img/icon/user-plus.svg" alt="user plus">
-                                 <div class="dashboard__card-content">
-                                    <h6 class="fw-bold mb-2">Invite first collaborator & Nominee</h6>
-                                    <p class="mb-0">Store securely, Autopilot™ finds the key details and creates reminders.</p>
-                                 </div>
-                              </a>
-                              <a href="#" class="service__card min-h-0 dashboard__card swiper-slide d-flex flex-column justify-content-between align-items-start text-black">
-                                 <img src="assets/img/icon/nid-icon-1.svg" alt="id">
-                                 <div class="dashboard__card-content">
-                                    <h6 class="fw-bold mb-2">Add your Identification</h6>
-                                    <p class="mb-0">Store securely, Autopilot™ finds the key details and creates reminders.</p>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="slider-nav d-flex align-items-center justify-content-center gap-2 pt-4">
-                              <button type="button" class="slider-nav-btn service__slider-btn-prev d-flex align-items-center justify-content-center rounded-circle" title="slide prev"><i class="fa-regular fa-long-arrow-left"></i></button>
-                              <button type="button" class="slider-nav-btn service__slider-btn-next d-flex align-items-center justify-content-center rounded-circle" title="slide next"><i class="fa-regular fa-long-arrow-right"></i></button>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="dashboard__block quick-links">
-                        <div class="dashboard__block-title mb-4">
-                           <h5 class="text-black fw-bold mb-0">Quick links</h5>
-                        </div>
-                        <div class="dashboard__cards">
-                           <div class="row">
-                              <div class="col-6 col-md-3">
-                                 <a href="#" class="dashboard__card quick-links__card style-2 d-flex flex-column justify-content-between align-items-start">
-                                    <img src="assets/img/icon/help.svg" alt="help">
-                                    <p class="mb-0 d-flex align-items-center justify-content-between gap-2 flex-wrap fw-semibold w-100">
-                                       <span>Get Help</span>
-                                       <span class="fa-regular fa-long-arrow-right"></span>
-                                    </p>
-                                 </a>
-                              </div>
-                              <div class="col-6 col-md-3">
-                                 <a href="#" class="dashboard__card quick-links__card style-2 d-flex flex-column justify-content-between align-items-start">
-                                    <img src="assets/img/icon/annotation-dots.svg" alt="animation dots">
-                                    <p class="mb-0 d-flex align-items-center justify-content-between gap-2 flex-wrap fw-semibold w-100">
-                                       <span>Send Feedback</span>
-                                       <span class="fa-regular fa-long-arrow-right"></span>
-                                    </p>
-                                 </a>
-                              </div>
-                              <div class="col-6 col-md-3">
-                                 <a href="#" class="dashboard__card quick-links__card style-2 d-flex flex-column justify-content-between align-items-start">
-                                    <img src="assets/img/icon/gift.svg" alt="gift">
-                                    <p class="mb-0 d-flex align-items-center justify-content-between gap-2 flex-wrap fw-semibold w-100">
-                                       <span>Refer and Earn</span>
-                                       <span class="fa-regular fa-long-arrow-right"></span>
-                                    </p>
-                                 </a>
-                              </div>
-                              <div class="col-6 col-md-3">
-                                 <a href="#" class="dashboard__card quick-links__card style-2 d-flex flex-column justify-content-between align-items-start">
-                                    <img src="assets/img/icon/announcement.svg" alt="announcement">
-                                    <p class="mb-0 d-flex align-items-center justify-content-between gap-2 flex-wrap fw-semibold w-100">
-                                       <span>What is New</span>
-                                       <span class="fa-regular fa-long-arrow-right"></span>
-                                    </p>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="dashboard__block guide">
-                        <div class="dashboard__block-title mb-4">
-                           <h4 class="text-black fw-bold mb-0">Guides for your family</h4>
-                        </div>
-                        <div class="dashboard__cards">
-                           <div class="row">
-                              <div class="col-sm-6">
-                                 <a href="#" class="guide__card dashboard__card d-flex flex-column justify-content-between align-items-start p-0 border-0 rounded-0">
-                                    <div class="dashboard__card-thumb overflow-hidden rounded-3">
-                                       <img src="assets/img/thumb/guide-thumb-1.jpg" alt="guide thumb" class="w-100 h-100 object-fit-cover">
+                              <div class="col-md-4 col-sm-6">
+                                 <div class="property__card-container">
+                                    <h6 class="text-black fw-bold mb-2 pb-1">Safe Deposit Boxes</h6>
+                                    <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between w-100">
+                                       <div>
+                                          <h6 class="person-name fw-bold text-black mb-1 d-flex gap-1">
+                                             <span>Davidson Deposit</span>
+                                             <button type="button" data-bs-toggle="modal" data-bs-target="#propertyTooltipModal" class="tooltip-toggle bg-transparent border-0"><img src="assets/img/icon/question-circle.svg" alt="question circle"></button>
+                                          </h6>
+                                          <span class="person-designation d-block">Owner</span>
+                                       </div>
+                                       <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                          <a href="#" class="d-inline-block link-text">4 Items</a>
+                                          <a href="#" class="add-btn"><img src="assets/img/icon/plus-circle.svg" alt="plus circle"></a>
+                                       </div>
                                     </div>
-                                    <div class="dashboard__card-content">
-                                       <h6 class="fw-bold mb-2">Our Disaster Planning Guide</h6>
-                                       <p class="mb-0">A prepared family is a safer family. Here’s how to organize before the unexpected strikes.</p>
-                                    </div>
-                                 </a>
+                                 </div>
                               </div>
-                              <div class="col-sm-6">
-                                 <a href="#" class="guide__card dashboard__card d-flex flex-column justify-content-between align-items-start p-0 border-0 rounded-0">
-                                    <div class="dashboard__card-thumb overflow-hidden rounded-3">
-                                       <img src="assets/img/thumb/guide-thumb-1.jpg" alt="guide thumb" class="w-100 h-100 object-fit-cover">
+                              <div class="col-md-4 col-sm-6">
+                                 <div class="property__card-container">
+                                    <h6 class="text-black fw-bold mb-2 pb-1">Other Possessions</h6>
+                                    <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between w-100">
+                                       <div>
+                                          <h6 class="person-name fw-bold text-black mb-1">Davidson Possessions</h6>
+                                          <span class="person-designation d-block">Owner</span>
+                                       </div>
+                                       <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                          <a href="#" class="d-inline-block link-text">4 Items</a>
+                                          <a href="#" class="add-btn"><img src="assets/img/icon/plus-circle.svg" alt="plus circle"></a>
+                                       </div>
                                     </div>
-                                    <div class="dashboard__card-content">
-                                       <h6 class="fw-bold mb-2">Our Disaster Planning Guide</h6>
-                                       <p class="mb-0">A prepared family is a safer family. Here’s how to organize before the unexpected strikes.</p>
-                                    </div>
-                                 </a>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -330,17 +269,62 @@
       </main>
       <!-- footer section start -->
       <footer class="footer">
-         <div class="container-xxl">
+         <div class="container-fluid">
             <p class="footer__copyright mb-0">© 1996-2025, Pocket Ledger.in, Private Limited. or its affiliates</p>
          </div>
       </footer>
       <!-- footer section end -->
+
+      <!-- property tool tip modal start -->
+      <div class="theme-modal modal fade" id="propertyTooltipModal" tabindex="-1" aria-labelledby="propertyTooltipModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mx-auto">
+            <div class="modal-content">
+               <div class="modal-header justify-content-between">
+                  <h4 class="modal-title fw-bold" id="propertyTooltipModalLabel">Home Safes</h4>
+                  <button type="button" data-bs-dismiss="modal" aria-label="Close" class="back-btn theme-btn theme-btn--regular d-inline-block rounded-pill">Close</button>
+               </div>
+               <div class="modal-body">
+                  <form action="#" class="theme-modal__form form d-flex flex-column">
+                     <div class="form__block">
+                        <p class="theme-modal__desc text-black mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut risus quis odio consequat sagittis. Donec vitae dolor hendrerit, placerat purus ac, molestie libero. Sed euismod at nisl a ultrices. Integer sollicitudin erat ac nisi eleifend lobortis. In vestibulum ligula nec leo dictum imperdiet. Suspendisse aliquet leo at diam dictum sollicitudin vel quis augue. </p>
+                     </div>
+                     <div class="form__block">
+                        <ul class="ps-4">
+                           <li class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut risus quis odio consequat sagittis.</li>
+                           <li class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut risus quis odio consequat sagittis.</li>
+                           <li class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut risus quis odio consequat sagittis.</li>
+                        </ul>
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <div class="theme-btn__wrap d-flex align-items-center justify-content-center w-100">
+                     <button type="button" data-bs-dismiss="modal" aria-label="Close" class="theme-btn theme-btn--sm theme-btn--regular d-inline-block rounded-pill">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- property tool tip modal end -->
+
+      <!-- property add error toast -->
+      <div class="toast-container position-fixed start-0 end-0 mx-auto px-3">
+         <div class="toast show bg-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-wrapper d-flex align-items-start">
+               <span class="toast-icon flex-shrink-0"><img src="assets/img/icon/success-icon.svg" alt="success-icon"></span>
+               <div class="toast-body flex-grow-1 p-0">
+                  <h6 class="toast-title fw-bold mb-1">Driving Information updated</h6>
+                  <p class="toast-desc mb-0 text-black">Your have successfully updated your diving license information.</p>
+               </div>
+               <button type="button" class="toast-close-btn bg-transparent border-0 d-flex align-items-center justify-content-center flex-shrink-0" data-bs-dismiss="toast" aria-label="Close"><i class="fa-regular fa-xmark"></i></button>
+            </div>
+         </div>
+      </div>
+
       <!-- vendor js -->
       <script src="assets/js/jquery-3.7.1.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/aos.js"></script>
-      <script src="assets/js/swiper-bundle.min.js"></script>
       <!-- main js -->
       <script src="assets/js/main.js"></script>
    </body>

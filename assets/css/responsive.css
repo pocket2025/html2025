@@ -22,14 +22,14 @@
    .survey-img {
       width: 310px;
    }
-   .sidebar {
-      width: 248px;
-   }
    .dashboard__main {
       padding: 52px 40px;
    }
    .dashboard__card {
       padding: 16px 20px;
+   }
+   .personal-info__card {
+      width: 250px;
    }
 }
 
@@ -56,6 +56,16 @@
       --bs-gutter-x: 16px;
       --bs-gutter-y: 16px;
    }
+   .personal-info__card-wrap {
+      gap: 20px;
+   }
+   .personal-info__card {
+      width: calc(33.33% - 14px);
+   }
+   .medication-item {
+      padding: 14px 16px;
+      gap: 32px;
+   }
 }
 
 /* 
@@ -75,7 +85,6 @@
       max-width: 100%;
    }
    .sidebar {
-      width: 288px;
       position: fixed;
       top: 0;
       height: 100vh;
@@ -84,6 +93,15 @@
    }
    .sidebar.show {
       margin-left: 0;
+   }
+   .theme-modal:not(.confirmation-modal) .modal-dialog {
+      max-width: 670px;
+   }
+   .upload-box {
+      width: 290px;
+   }
+   .attachment {
+      width: 295px;
    }
 }
 
@@ -112,6 +130,7 @@
    }
    .theme-btn {
       padding: 10px 20px;
+      font-size: 14px;
    }
    .section-title__desc--lg {
       font-size: 16px;
@@ -119,10 +138,88 @@
    .dashboard__main {
       padding: 40px 20px;
    }
+   .personal-info__card {
+      width: calc(50% - 10px);
+   }
+   .header .container-fluid {
+      padding-inline: 20px;
+   }
+   .theme-modal .modal-dialog {
+      width: calc(100% - 40px);
+   }
+   .theme-modal .modal-header {
+      padding: 16px;
+   }
+   .theme-modal .modal-title {
+      font-size: 16px;
+   }
+   .theme-modal .modal-body {
+      padding: 16px;
+   }
+   .theme-modal__desc {
+      font-size: 16px;
+   }
+   .upload-box__list {
+      gap: 16px;
+   }
+   .upload-box {
+      width: calc(50% - 8px);
+   }
+   .upload-box__wrapper {
+      min-height: 140px;
+      font-size: 14px;
+      padding: 16px;
+   }
+   .upload-box__icon {
+      width: 40px;
+   }
+   .theme-modal .modal-footer {
+      padding: 16px;
+   }
+   .medication-item__name,
+   .medication-item__doctor {
+      font-size: 14px;
+   }
+   .medication-item {
+      gap: 24px;
+   }
+   .medication-item__action-toggle img {
+      width: 24px;
+   }
+   .form__block ul li {
+      font-size: 16px;
+      line-height: 22px;
+   }
+   .property-detail__block {
+      padding: 14px;
+   }
+   .attachment {
+      width: calc(50% - 7px);
+   }
+   .property__card {
+      padding: 16px;
+      gap: 16px;
+   }
 }
 
 /* 
   Extra small devices (less than 576px)
 */
 @media (max-width: 575px) {
+   .personal-info__card {
+      width: 100%;
+   }
+   .property-add__step h6 {
+      font-size: 12px;
+   }
+   .property-add__step span {
+      width: 24px;
+      height: 24px;
+   }
+   .step-divider {
+      margin-top: 12px;
+   }
+   .attachment {
+      width: 100%;
+   }
 }
