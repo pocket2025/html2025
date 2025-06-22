@@ -31,6 +31,29 @@
    .personal-info__card {
       width: 250px;
    }
+   .blog-card__wrapper .row {
+      --bs-gutter-x: 24px;
+      --bs-gutter-y: 24px;
+   }
+   .loan__block .row {
+      --bs-gutter-x: 24px;
+   }
+   .blog-card__content {
+      padding: 17px 24px 20px;
+   }
+   .collaborator__empty-area {
+      padding: 48px 24px;
+   }
+   .collaborator__info-cards {
+      margin-top: 48px;
+   }
+   .collaborator__profiles .row {
+      --bs-gutter-x: 20px;
+      --bs-gutter-y: 20px;
+   }
+   .collaborator__profile {
+      padding: 16px 20px;
+   }
 }
 
 /* 
@@ -141,7 +164,8 @@
    .personal-info__card {
       width: calc(50% - 10px);
    }
-   .header .container-fluid {
+   .header .container-fluid,
+   .footer .container-fluid {
       padding-inline: 20px;
    }
    .theme-modal .modal-dialog {
@@ -200,6 +224,15 @@
       padding: 16px;
       gap: 16px;
    }
+   .safebox-attachments .attachment {
+      width: calc(33.33% - 9px);
+   }
+   .collaborator__empty-area {
+      padding: 40px 20px;
+   }
+   .blog-card--fluid .blog-card__thumb {
+      width: 100%;
+   }
 }
 
 /* 
@@ -221,5 +254,8 @@
    }
    .attachment {
       width: 100%;
+   }
+   .safebox-attachments .attachment {
+      width: calc(50% - 7px);
    }
 }

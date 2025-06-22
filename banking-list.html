@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Title -->
+      <title>Banking List | PocketLedger</title>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+      <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+      <!-- vendor css -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
+      <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/responsive.css">
+   </head>
+
+   <body>
+      <!-- header section start -->
+      <header class="header">
+         <div class="container-fluid">
+            <div class="header__wrapper d-flex align-items-center justify-content-between">
+               <div class="header__left d-flex align-items-center gap-3">
+                  <button type="button" title="sidebar toggle" class="sidebar-toggle d-flex d-lg-none bg-transparent border-0"><i class="fa-regular fa-bars"></i></button>
+                  <a href="index.html" class="header__logo d-inline-flex align-items-center fw-bold">
+                     <img src="assets/img/icon/logo-icon.svg" alt="logo icon" class="header__logo-icon">
+                     <span class="header__logo-text">PocketLedger</span>
+                  </a>
+               </div>
+               <a href="#" class="header__btn d-inline-flex align-items-center rounded-pill"><span><span class="d-none d-md-inline-block">Welcome</span> Sarah W. Davidson</span><span class="d-flex"><i class="fa-regular fa-angle-down"></i></span></a>
+            </div>
+         </div>
+      </header>
+      <!-- header section end -->
+      <main>
+         <!-- dashboard section start -->
+         <section class="dashboard property">
+            <div class="dashboard__wrapper d-flex">
+               <!-- sidebar start -->
+               <aside class="sidebar style-2 flex-shrink-0">
+                  <button title="sidebar toggle" type="button" class="sidebar__collapse-btn d-none d-lg-flex align-items-center justify-content-center position-absolute end-0"><i class="fa-regular fa-angle-left"></i></button>
+                  <button title="sidebar toggle" type="button" class="sidebar__close-btn d-flex d-lg-none align-items-center justify-content-center position-absolute end-0"><i class="fa-regular fa-xmark"></i></button>
+                  <div class="sidebar__wrapper d-flex flex-column">
+                     <div class="sidebar__block">
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Inbox"><img src="assets/img/icon/envelope.svg" alt="envelope" class="sidebar__menu-icon"><span class="sidebar__menu-text">Inbox</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Today Reminder"><img src="assets/img/icon/bell.svg" alt="bell" class="sidebar__menu-icon"><span class="sidebar__menu-text">Today Reminder</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">Family Circle</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Family Members"><img src="assets/img/icon/users.svg" alt="users" class="sidebar__menu-icon"><span class="sidebar__menu-text">Family Members</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Personal Info & ID"><img src="assets/img/icon/chart.svg" alt="chart" class="sidebar__menu-icon"><span class="sidebar__menu-text">Personal Info & ID</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Property & Assets"><img src="assets/img/icon/layers.svg" alt="layer" class="sidebar__menu-icon"><span class="sidebar__menu-text">Property & Assets</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">Finance Circle</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Loan & Credit Card"><img src="assets/img/icon/credit-card.svg" alt="credit-card" class="sidebar__menu-icon"><span class="sidebar__menu-text">Loan & Credit Card</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center active" data-bs-toggle="tooltip" title="Banking"><img src="assets/img/icon/bank.svg" alt="bank" class="sidebar__menu-icon"><span class="sidebar__menu-text">Banking</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Trading"><img src="assets/img/icon/trending-up.svg" alt="trending-up" class="sidebar__menu-icon"><span class="sidebar__menu-text">Trading</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Budgeting"><img src="assets/img/icon/chart-2.svg" alt="chart" class="sidebar__menu-icon"><span class="sidebar__menu-text">Budgeting</span><span class="sidebar__menu-link-tag d-inline-block rounded-pill text-uppercase fw-bold">Coming soon</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Teen Banking"><img src="assets/img/icon/building.svg" alt="building" class="sidebar__menu-icon"><span class="sidebar__menu-text">Teen Banking</span><span class="sidebar__menu-link-tag d-inline-block rounded-pill text-uppercase fw-bold">Coming soon</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">Collaborate & Nominee</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Collaborator"><img src="assets/img/icon/virus.svg" alt="virus" class="sidebar__menu-icon"><span class="sidebar__menu-text">Collaborator</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Nominee"><img src="assets/img/icon/award.svg" alt="award" class="sidebar__menu-icon"><span class="sidebar__menu-text">Nominee</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3 d-flex align-items-center justify-content-between"><span>Legal & Wills </span><span class="sidebar__menu-link-tag d-inline-block rounded-pill text-uppercase fw-bold">Coming soon</span></h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Digital Will"><img src="assets/img/icon/feather.svg" alt="feather" class="sidebar__menu-icon"><span class="sidebar__menu-text">Digital Will</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Power of Attorney"><img src="assets/img/icon/shield.svg" alt="shield" class="sidebar__menu-icon"><span class="sidebar__menu-text">Power of Attorney</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">PERSONAL CRM</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Your Contacts"><img src="assets/img/icon/clipboard.svg" alt="clipboard" class="sidebar__menu-icon"><span class="sidebar__menu-text">Your Contacts</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Family Resources"><img src="assets/img/icon/information.svg" alt="information" class="sidebar__menu-icon"><span class="sidebar__menu-text">Family Resources</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="sidebar__divider"></div>
+                     <div class="sidebar__block">
+                        <h6 class="sidebar__block-title fw-normal mb-3">My settings</h6>
+                        <ul class="sidebar__menu d-flex flex-column">
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="My Profile"><img src="assets/img/icon/user.svg" alt="user" class="sidebar__menu-icon"><span class="sidebar__menu-text">My Profile</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Change Password"><img src="assets/img/icon/lock.svg" alt="lock" class="sidebar__menu-icon"><span class="sidebar__menu-text">Change Password</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Billing & Payments"><img src="assets/img/icon/dollar.svg" alt="dollar" class="sidebar__menu-icon"><span class="sidebar__menu-text">Billing & Payments</span></a>
+                           </li>
+                           <li class="sidebar__menu-item">
+                              <a href="#" class="sidebar__menu-link d-flex align-items-center" data-bs-toggle="tooltip" title="Logoff"><img src="assets/img/icon/log-out.svg" alt="log-out" class="sidebar__menu-icon"><span class="sidebar__menu-text">Logoff</span></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </aside>
+               <div class="sidebar__overlay fixed-top w-100 h-100 d-lg-none"></div>
+               <!-- sidebar end -->
+               <div class="dashboard__main flex-grow-1">
+                  <div class="dashboard__main-wrapper mx-auto">
+                     <div class="section-title mb-5">
+                        <h2 class="section-title__title section-title__title--primary fw-bold mb-3 d-flex align-items-start justify-content-between gap-4 flex-wrap-reverse">
+                           <span>Davidson Bank Accounts <a href="#" class="add-btn d-inline-block ms-2"><img src="assets/img/icon/plus-circle.svg" alt="plus circle"></a></span>
+                           <a href="loan-credit-card.html" class="back-btn theme-btn theme-btn--regular d-inline-block rounded-pill">Back to Loans & Credit Cards</a>
+                        </h2>
+                        <p class="section-title__desc mb-0">Congrats on taking the first step towards getting everything in your life organised once and for all.The next few pages will gather general information so we an personalise your Pocket Ledger experience</p>
+                     </div>
+                     <div class="property__list d-flex flex-column gap-3">
+                        <div class="property__card rounded-1 d-flex justify-content-between">
+                           <div class="property__card-content">
+                              <h6 class="property__card-title fw-bold text-black mb-1">Bank Account Name</h6>
+                              <span class="acc-type-tag d-inline-block rounded-1 mb-1">Salary Accounts</span>
+                              <p class="mb-1">Account Number will display here</p>
+                              <p class="mb-1">₹ 0</p>
+                              <a href="#" class="view-more-btn d-inline-block text-decoration-underline">View More Information</a>
+                           </div>
+                           <div class="property__action-dropdown dropdown">
+                              <button type="button" class="dropdown-toggle bg-transparent border-0" data-bs-toggle="dropdown" aria-expanded="false"><img src="assets/img/icon/three-dots.svg" alt="three dots"></button>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" data-bs-toggle="modal" href="#bankInfoViewModal">View Info</a></li>
+                                 <li><a class="dropdown-item" href="#">Edit</a></li>
+                                 <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteConfirmModal">Delete</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="property__card rounded-1 d-flex justify-content-between">
+                           <div class="property__card-content">
+                              <h6 class="property__card-title fw-bold text-black mb-1">Savings Account</h6>
+                              <span class="acc-type-tag d-inline-block rounded-1 mb-1">Current Accounts</span>
+                              <p class="mb-1">1234567890</p>
+                              <p class="mb-1">₹ 15,000</p>
+                              <a href="#" class="view-more-btn d-inline-block text-decoration-underline">View More Information</a>
+                           </div>
+                           <div class="property__action-dropdown dropdown">
+                              <button type="button" class="dropdown-toggle bg-transparent border-0" data-bs-toggle="dropdown" aria-expanded="false"><img src="assets/img/icon/three-dots.svg" alt="three dots"></button>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" data-bs-toggle="modal" href="#bankInfoViewModal">View Info</a></li>
+                                 <li><a class="dropdown-item" href="#">Edit</a></li>
+                                 <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteConfirmModal">Delete</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="property__card rounded-1 d-flex justify-content-between">
+                           <div class="property__card-content">
+                              <h6 class="property__card-title fw-bold text-black mb-1">Checking Account</h6>
+                              <span class="acc-type-tag d-inline-block rounded-1 mb-1">Salary Accounts</span>
+                              <p class="mb-1">0987654321</p>
+                              <p class="mb-1">₹ 7,500</p>
+                              <a href="#" class="view-more-btn d-inline-block text-decoration-underline">View More Information</a>
+                           </div>
+                           <div class="property__action-dropdown dropdown">
+                              <button type="button" class="dropdown-toggle bg-transparent border-0" data-bs-toggle="dropdown" aria-expanded="false"><img src="assets/img/icon/three-dots.svg" alt="three dots"></button>
+                              <ul class="dropdown-menu">
+                                 <li><a class="dropdown-item" data-bs-toggle="modal" href="#bankInfoViewModal">View Info</a></li>
+                                 <li><a class="dropdown-item" href="#">Edit</a></li>
+                                 <li><a class="dropdown-item" data-bs-toggle="modal" href="#deleteConfirmModal">Delete</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- dashboard section end -->
+      </main>
+      <!-- footer section start -->
+      <footer class="footer">
+         <div class="container-fluid">
+            <p class="footer__copyright mb-0 text-black fw-semibold text-center">© 1996-2025, Pocket Ledger.in, Private Limited. or its affiliates</p>
+         </div>
+      </footer>
+      <!-- footer section end -->
+      <!-- homesafe modal start -->
+      <div class="theme-modal modal fade" id="bankInfoViewModal" tabindex="-1" aria-labelledby="bankInfoViewModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mx-auto">
+            <div class="modal-content">
+               <div class="modal-header justify-content-between">
+                  <h4 class="modal-title fw-bold" id="bankInfoViewModalLabel">Bank Information</h4>
+                  <button type="button" data-bs-dismiss="modal" aria-label="Close" class="back-btn theme-btn theme-btn--regular d-inline-block rounded-pill">Close</button>
+               </div>
+               <div class="modal-body">
+                  <p class="theme-modal__desc text-black mb-4 pb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum rhoncus arcu, at pharetra lorem hendrerit non. Pellentesque consequat ullamcorper ligula in ultricies.</p>
+                  <div class="property-detail">
+                     <div class="property-detail__block rounded-1">
+                        <div class="property-detail__sub-block">
+                           <h5 class="fw-normal text-black">Account Name</h5>
+                           <p class="mb-0">Value will come here</p>
+                        </div>
+                        <div class="property-detail__sub-block">
+                           <h5 class="fw-normal text-black">Account Number</h5>
+                           <p class="mb-0">Value will come here</p>
+                        </div>
+                        <div class="property-detail__sub-block">
+                           <h5 class="fw-normal text-black">Type of account</h5>
+                           <span class="acc-type-tag d-inline-block rounded-1">Salary Accounts</span>
+                        </div>
+                        <div class="property-detail__sub-block">
+                           <h5 class="fw-normal text-black">Recurring Account Per month</h5>
+                           <p class="mb-0">₹ 15,000</p>
+                        </div>
+                        <div class="property-detail__sub-block">
+                           <h5 class="fw-normal text-black">Salary Per Month Debit</h5>
+                           <p class="mb-0">₹ 355,000</p>
+                        </div>
+                        <div class="property-detail__sub-block">
+                           <h5 class="fw-normal text-black">Additional Notes</h5>
+                           <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum rhoncus arcu, at pharetra lorem hendrerit non. Pellentesque consequat ullamcorper ligula in ultricies.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <div class="theme-btn__wrap d-flex align-items-center justify-content-between w-100">
+                     <a href="#" class="theme-btn theme-btn--sm theme-btn--regular d-inline-block rounded-pill">Edit Bank Account</a>
+                     <div class="flex-grow-1">
+                        <button type="button" data-bs-dismiss="modal" aria-label="close" class="theme-btn theme-btn--sm theme-btn--regular d-inline-block rounded-pill">Close</button>
+                     </div>
+                     <button type="button" class="theme-btn theme-btn--sm theme-btn--danger d-inline-block rounded-pill">Delete</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- homesafe modal end -->
+      <!-- delete confirm modal start -->
+      <div class="theme-modal confirmation-modal modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="propdeleteConfirmlLabel" aria-hidden="true" data-bs-backdrop="false">
+         <div class="modal-dialog modal-dialog-scrollable mx-auto">
+            <div class="modal-content border-0">
+               <div class="modal-body">
+                  <h4 class="modal-title fw-bold text-black mb-2" id="deleteConfirmModalLabel">Delete Confirmation</h4>
+                  <p class="confirmation-msg mb-0 fw-semibold text-black">Are you sure you want to delete the following <span class="fw-bolder">“Property Name”</span></p>
+               </div>
+               <div class="modal-footer bg-white">
+                  <div class="theme-btn__wrap d-flex align-items-center w-100">
+                     <button type="button" class="theme-btn theme-btn--sm theme-btn--danger d-inline-block rounded-pill">Delete</button>
+                     <button type="button" data-bs-dismiss="modal" aria-label="Close" class="theme-btn theme-btn--sm theme-btn--regular d-inline-block rounded-pill">Cancel</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- delete confirm modal end -->
+      <!-- vendor js -->
+      <script src="assets/js/jquery-3.7.1.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <!-- main js -->
+      <script src="assets/js/main.js"></script>
+   </body>
+
+</html>

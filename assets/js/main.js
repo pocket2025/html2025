@@ -92,3 +92,18 @@ var serviceSlider = new Swiper(".service__slider", {
       },
    },
 });
+
+// account slider active
+var accountSlider = new Swiper(".account-card__slider", {
+   loop: true,
+   slidesPerView: "auto",
+   spaceBetween: 16,
+   speed: 1000,
+   // autoplay: {
+   //    delay: 3500,
+   // },
+   navigation: {
+      nextEl: ".account-card__slider-btn-next",
+      prevEl: ".account-card__slider-btn-prev",
+   },
+});
