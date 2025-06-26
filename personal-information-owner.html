@@ -18,6 +18,8 @@
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
       <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+      <link rel="stylesheet" href="assets/css/choices.min.css">
+      <link rel="stylesheet" href="assets/css/daterangepicker.css">
       <!-- main css -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
@@ -164,30 +166,30 @@
                            <p class="section-title__desc mb-0">Congrats on taking the first step towards getting everything in your life organised once and for all.The next few pages will gather general information so we an personalise your Pocket Ledger experience</p>
                         </div>
                         <div class="personal-info__card-wrap d-flex flex-wrap gap-3 gap-xl-4">
-                           <div class="personal-info__card personal-info__card--sm dashboard__card d-flex flex-column justify-content-between">
+                           <a data-bs-toggle="modal" href="#familyMemberModal" class="personal-info__card personal-info__card--sm dashboard__card d-flex flex-column justify-content-between">
                               <div>
                                  <h6 class="person-name fw-bold text-black mb-1">Birth Day</h6>
                                  <span class="person-designation d-block">April 18, 1979</span>
                               </div>
-                           </div>
-                           <div class="personal-info__card personal-info__card--sm dashboard__card d-flex flex-column justify-content-between">
+                           </a>
+                           <a data-bs-toggle="modal" href="#familyMemberModal" class="personal-info__card personal-info__card--sm dashboard__card d-flex flex-column justify-content-between">
                               <div>
                                  <h6 class="person-name fw-bold text-black mb-1">Blood Group</h6>
                                  <span class="person-designation d-block">AB Positive</span>
                               </div>
-                           </div>
-                           <div class="personal-info__card personal-info__card--sm dashboard__card d-flex flex-column justify-content-between">
+                           </a>
+                           <a data-bs-toggle="" href="#familyMemberModal" class="personal-info__card personal-info__card--sm dashboard__card d-flex flex-column justify-content-between">
                               <div>
                                  <h6 class="person-name fw-bold text-black mb-1">Height & Weight</h6>
                                  <span class="person-designation d-block">5.4 Inc / 184 Pounds</span>
                               </div>
-                           </div>
-                           <div class="personal-info__card personal-info__card--sm dashboard__card d-flex flex-column justify-content-between">
+                           </a>
+                           <a data-bs-toggle="modal" href="#familyMemberModal" class="personal-info__card personal-info__card--sm dashboard__card d-flex flex-column justify-content-between">
                               <div>
                                  <h6 class="person-name fw-bold text-black mb-1">Medications</h6>
                                  <span class="person-designation d-block">4 Regular</span>
                               </div>
-                           </div>
+                           </a>
                         </div>
                      </div>
                      <div class="dashboard__block identification">
@@ -275,7 +277,7 @@
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="expire-date" class="form__input-label fs-6">Expire Date</label>
-                                    <input type="date" id="expire-date" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="expire-date" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-12">
@@ -295,18 +297,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -381,18 +385,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -449,18 +455,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -557,13 +565,13 @@
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="issue-date" class="form__input-label fs-6">Issues Date</label>
-                                    <input type="date" id="issue-date" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="issue-date" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="issue-date" class="form__input-label fs-6">Expired Date</label>
-                                    <input type="date" id="issue-date" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="issue-date" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-12">
@@ -583,18 +591,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -643,7 +653,7 @@
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="dob" class="form__input-label fs-6">Date of Birth</label>
-                                    <input type="date" id="dob" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="dob" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-md-6">
@@ -674,18 +684,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -734,7 +746,7 @@
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="dob" class="form__input-label fs-6">Date of Birth</label>
-                                    <input type="date" id="dob" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="dob" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-md-6">
@@ -765,11 +777,12 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Profile Image</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -832,7 +845,7 @@
                                        <span>Date of Birth</span>
                                        <span class="optional-text">Optional</span>
                                     </label>
-                                    <input type="date" id="dob" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="dob" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-12">
@@ -869,11 +882,12 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Profile Image</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                      <div class="form__block">
@@ -922,12 +936,18 @@
          </div>
       </div>
       <!-- family member modal end -->
+
       <!-- vendor js -->
       <script src="assets/js/jquery-3.7.1.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/choices.min.js"></script>
+      <script src="assets/js/moment.min.js"></script>
+      <script src="assets/js/daterangepicker.js"></script>
       <!-- main js -->
       <script src="assets/js/main.js"></script>
+
+
    </body>
 
 </html>

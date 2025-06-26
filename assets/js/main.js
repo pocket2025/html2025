@@ -27,83 +27,48 @@
          $(".sidebar, .sidebar__overlay").removeClass("show");
       });
 
-      // AOS Active
-      AOS.init({
-         // Global settings:
-         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-         startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-         initClassName: "aos-init", // class applied after initialization
-         animatedClassName: "aos-animate", // class applied on animation
-         useClassNames: false, // if true, will add content of data-aos as classes on scroll
-         disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-         debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-         throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-         // Settings that can be overridden on per-element basis, by data-aos-* attributes:
-         offset: 120, // offset (in px) from the original trigger point
-         delay: 100, // values from 0 to 3000, with step 50ms
-         duration: 1000, // values from 0 to 3000, with step 50ms
-         easing: "ease-in-out", // default easing for AOS animations
-         once: true, // whether animation should happen only once - while scrolling down
-         mirror: false, // whether elements should animate out while scrolling past them
-         anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      // date range picker active
+      $(function () {
+         $(".daterangepicker-active").daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            minYear: 1901,
+            maxYear: parseInt(moment().format("YYYY"), 10),
+         });
       });
    });
 })(jQuery);
 
-// testimonial slider active
-var testimonialSlider = new Swiper(".testimonial-slider", {
-   loop: true,
-   spaceBetween: 20,
-   speed: 1000,
-   // autoplay: {
-   //    delay: 3500,
-   // },
+// choice js active
+document.addEventListener("DOMContentLoaded", function () {
+   const selectElements = document.querySelectorAll("select");
+
+   selectElements.forEach((select) => {
+      new Choices(select, {
+         allowHTML: true,
+         placeholder: true,
+      });
+   });
 });
 
-// service slider active
-var serviceSlider = new Swiper(".service__slider", {
-   // loop: true,
-   slidesPerView: 3,
-   spaceBetween: 24,
-   speed: 1000,
-   // autoplay: {
-   //    delay: 3500,
-   // },
-   navigation: {
-      nextEl: ".service__slider-btn-next",
-      prevEl: ".service__slider-btn-prev",
-   },
-   breakpoints: {
-      0: {
-         spaceBetween: 16,
-         slidesPerView: 1,
-      },
-      576: {
-         slidesPerView: 2,
-         spaceBetween: 16,
-      },
-      768: {
-         slidesPerView: 3,
-         spaceBetween: 16,
-      },
-      1200: {
-         spaceBetween: 24,
-      },
-   },
-});
+// image upload
+document.addEventListener("DOMContentLoaded", function () {
+   const inputs = document.querySelectorAll(".upload-input");
 
-// account slider active
-var accountSlider = new Swiper(".account-card__slider", {
-   loop: true,
-   slidesPerView: "auto",
-   spaceBetween: 16,
-   speed: 1000,
-   // autoplay: {
-   //    delay: 3500,
-   // },
-   navigation: {
-      nextEl: ".account-card__slider-btn-next",
-      prevEl: ".account-card__slider-btn-prev",
-   },
+   inputs.forEach((input) => {
+      input.addEventListener("change", function () {
+         const file = this.files[0];
+         if (!file || !file.type.startsWith("image/")) return;
+
+         const reader = new FileReader();
+         reader.onload = function (e) {
+            const label = input.closest("label");
+            const preview = label.querySelector(".preview-img");
+            if (preview) {
+               preview.innerHTML = `<img src="${e.target.result}" alt="Preview">`;
+            }
+         };
+         reader.readAsDataURL(file);
+      });
+   });
 });

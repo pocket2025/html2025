@@ -19,6 +19,7 @@
       <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
       <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
       <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+      <link rel="stylesheet" href="assets/css/choices.min.css">
       <!-- main css -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
@@ -376,9 +377,26 @@
       <script src="assets/js/jquery-3.7.1.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"></script><script src="assets/js/choices.min.js"></script>
       <!-- main js -->
       <script src="assets/js/main.js"></script>
+
+      <script>
+         // account slider active
+         var accountSlider = new Swiper(".account-card__slider", {
+            loop: true,
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            speed: 1000,
+            autoplay: {
+               delay: 3500,
+            },
+            navigation: {
+               nextEl: ".account-card__slider-btn-next",
+               prevEl: ".account-card__slider-btn-prev",
+            },
+         });
+      </script>
    </body>
 
 </html>

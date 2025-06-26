@@ -54,6 +54,9 @@
    .collaborator__profile {
       padding: 16px 20px;
    }
+   .dashboard__block .back-btn {
+      margin-right: -7px;
+   }
 }
 
 /* 
@@ -88,6 +91,9 @@
    .medication-item {
       padding: 14px 16px;
       gap: 32px;
+   }
+   .dashboard__block .back-btn {
+      margin-right: 0px;
    }
 }
 
@@ -206,9 +212,6 @@
    }
    .medication-item {
       gap: 24px;
-   }
-   .medication-item__action-toggle img {
-      width: 24px;
    }
    .form__block ul li {
       font-size: 16px;

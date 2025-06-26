@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="assets/fonts/stylesheet.css">
       <link rel="stylesheet" href="assets/css/aos.css">
       <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="assets/css/choices.min.css">
       <!-- main css -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
@@ -125,8 +126,21 @@
       <script src="assets/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/aos.js"></script>
       <script src="assets/js/swiper-bundle.min.js"></script>
+      <script src="assets/js/choices.min.js"></script>
       <!-- main js -->
       <script src="assets/js/main.js"></script>
+
+      <script>
+         // testimonial slider active
+         var testimonialSlider = new Swiper(".testimonial-slider", {
+            loop: true,
+            spaceBetween: 20,
+            speed: 1000,
+            autoplay: {
+               delay: 3500,
+            },
+         });
+      </script>
    </body>
 
 </html>

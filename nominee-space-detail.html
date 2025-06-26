@@ -18,6 +18,8 @@
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
       <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+      <link rel="stylesheet" href="assets/css/choices.min.css">
+      <link rel="stylesheet" href="assets/css/daterangepicker.css">
       <!-- main css -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
@@ -425,7 +427,7 @@
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="expire-date" class="form__input-label fs-6">Expire Date</label>
-                                    <input type="date" id="expire-date" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="expire-date" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-12">
@@ -445,18 +447,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -531,18 +535,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -599,18 +605,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -707,13 +715,13 @@
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="issue-date" class="form__input-label fs-6">Issues Date</label>
-                                    <input type="date" id="issue-date" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="issue-date" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="issue-date" class="form__input-label fs-6">Expired Date</label>
-                                    <input type="date" id="issue-date" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="issue-date" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-12">
@@ -733,18 +741,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -793,7 +803,7 @@
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="dob" class="form__input-label fs-6">Date of Birth</label>
-                                    <input type="date" id="dob" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="dob" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-md-6">
@@ -824,18 +834,20 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Drop front side here</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -884,7 +896,7 @@
                               <div class="col-md-6">
                                  <div class="form__input w-100">
                                     <label for="dob" class="form__input-label fs-6">Date of Birth</label>
-                                    <input type="date" id="dob" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="dob" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-md-6">
@@ -915,11 +927,12 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Profile Image</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                   </form>
@@ -982,7 +995,7 @@
                                        <span>Date of Birth</span>
                                        <span class="optional-text">Optional</span>
                                     </label>
-                                    <input type="date" id="dob" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                    <input type="text" id="dob" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
                                  </div>
                               </div>
                               <div class="col-12">
@@ -1019,11 +1032,12 @@
                      </div>
                      <div class="form__block upload-box__list d-flex flex-wrap">
                         <label class="upload-box position-relative text-black">
-                           <input type="file" class="visually-hidden">
+                           <input type="file" class="visually-hidden upload-input">
                            <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
                               <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
                               <span class="upload-box__text d-block">Profile Image</span>
                            </div>
+                           <div class="preview-img"></div>
                         </label>
                      </div>
                      <div class="form__block">
@@ -1107,6 +1121,9 @@
       <script src="assets/js/jquery-3.7.1.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/choices.min.js"></script>
+      <script src="assets/js/moment.min.js"></script>
+      <script src="assets/js/daterangepicker.js"></script>
       <!-- main js -->
       <script src="assets/js/main.js"></script>
    </body>

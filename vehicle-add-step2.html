@@ -18,6 +18,7 @@
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
       <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+      <link rel="stylesheet" href="assets/css/choices.min.css">
       <!-- main css -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
@@ -82,11 +83,12 @@
                                  <label for="additional-notes" class="form__input-label fs-6">Additional Notes</label>
                                  <input type="text" id="additional-notes" class="form__input-field form__input-field--sm w-100 rounded" value="Value for the form">
                               </div>
-                              <div class="form__input file-upload w-100 text-center p-3">
-                                 <label for="upload" class="upload-btn d-inline-flex gap-2 fw-bold"><i class="fa-regular fa-arrow-up-from-bracket"></i> Upload Image</label>
-                                 <input type="file" id="upload" class="visually-hidden">
-                                 <p class="mb-0 fs-6">Upload the SCAN copy of the Vehicle RC Book</p>
-                              </div>
+                              <label class="form__input file-upload position-relative overflow-hidden w-100 text-center p-3">
+                                 <input type="file" class="visually-hidden upload-input">
+                                 <div class="preview-img position-static"></div>
+                                 <span class="upload-btn d-inline-flex gap-2 fw-bold"><i class="fa-regular fa-arrow-up-from-bracket"></i> Upload Image</span>
+                                 <p class="mb-0 fs-6">Upload your scan copy of property document</p>
+                              </label>
                            </div>
                         </div>
                         <div class="form__block form__footer">
@@ -114,6 +116,7 @@
       <script src="assets/js/jquery-3.7.1.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/choices.min.js"></script>
       <!-- main js -->
       <script src="assets/js/main.js"></script>
    </body>

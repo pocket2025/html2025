@@ -18,6 +18,8 @@
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
       <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+      <link rel="stylesheet" href="assets/css/choices.min.css">
+      <link rel="stylesheet" href="assets/css/daterangepicker.css">
       <!-- main css -->
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/responsive.css">
@@ -180,21 +182,21 @@
                                  <h6 class="person-name fw-bold text-black mb-1">New Family Member</h6>
                                  <span class="person-designation d-block">Recommended item</span>
                               </div>
-                              <a href="#" class="d-inline-block link-text">Add</a>
+                              <a data-bs-toggle="modal" href="#familyMemberModal" class="d-inline-block link-text">Add</a>
                            </div>
                            <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between">
                               <div>
                                  <h6 class="person-name fw-bold text-black mb-1">Matthew M. Whorton</h6>
                                  <span class="person-designation d-block">Husband (Nominee)</span>
                               </div>
-                              <a href="#" class="d-inline-block link-text">Add</a>
+                              <a href="#" class="d-inline-block link-text">4 Items</a>
                            </div>
                            <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between">
                               <div>
                                  <h6 class="person-name fw-bold text-black mb-1">Mark E. Donofrio</h6>
                                  <span class="person-designation d-block">Son</span>
                               </div>
-                              <a href="#" class="d-inline-block link-text">Add</a>
+                              <a href="#" class="d-inline-block link-text">4 Items</a>
                            </div>
                            <div class="personal-info__card dashboard__card d-flex flex-column justify-content-between">
                               <div>
@@ -218,10 +220,151 @@
          </div>
       </footer>
       <!-- footer section end -->
+
+      <!-- family member modal start -->
+      <div class="theme-modal modal fade" id="familyMemberModal" tabindex="-1" aria-labelledby="familyMemberModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mx-auto">
+            <div class="modal-content">
+               <div class="modal-header justify-content-between">
+                  <h4 class="modal-title fw-bold" id="familyMemberModalLabel">Family Member</h4>
+                  <button type="button" data-bs-dismiss="modal" aria-label="Close" class="back-btn theme-btn theme-btn--regular d-inline-block rounded-pill">Close</button>
+               </div>
+               <div class="modal-body">
+                  <form action="#" class="theme-modal__form form d-flex flex-column">
+                     <div class="form__block">
+                        <p class="theme-modal__desc text-black mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum rhoncus arcu, at pharetra lorem hendrerit non. Pellentesque consequat ullamcorper ligula in ultricies.</p>
+                     </div>
+                     <div class="form__block">
+                        <div class="form__input-list">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form__input w-100">
+                                    <label for="first-name" class="form__input-label fs-6">First Name</label>
+                                    <input type="text" id="first-name" class="form__input-field form__input-field--sm w-100 rounded-1" value="Value for the form">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form__input w-100">
+                                    <label for="last-name" class="form__input-label fs-6">Last Name</label>
+                                    <input type="text" id="last-name" class="form__input-field form__input-field--sm w-100 rounded-1" value="Value for the form">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form__input w-100">
+                                    <label for="relationship" class="form__input-label fs-6">Relationship</label>
+                                    <select id="relationship" class="form__input-field form__input-field--sm w-100 rounded-1">
+                                       <option value="Value for the form">Value for the form</option>
+                                       <option value="Value for the form">Value for the form</option>
+                                       <option value="Value for the form">Value for the form</option>
+                                       <option value="Value for the form">Value for the form</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form__input w-100">
+                                    <label for="dob" class="form__input-label fs-6 d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                                       <span>Date of Birth</span>
+                                       <span class="optional-text">Optional</span>
+                                    </label>
+                                    <input type="text" id="dob" class="form__input-field form__input-field--sm daterangepicker-active w-100 rounded-1">
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form__condition">
+                                    <label class="form__condition-label position-relative">
+                                       <input type="checkbox" class="visually-hidden">
+                                       <div class="form__condition-wrap d-flex align-items-start">
+                                          <span class="form__checkbox d-flex align-items-center justify-content-center rounded-1 flex-shrink-0"><i class="fa-regular fa-check"></i></span>
+                                          <span>Add this family member as a nominee</span>
+                                       </div>
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form__input w-100">
+                                    <label for="email" class="form__input-label fs-6">Email Address</label>
+                                    <input type="email" id="email" class="form__input-field form__input-field--sm w-100 rounded-1" value="Value for the form">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form__input w-100">
+                                    <label for="phone" class="form__input-label fs-6">Phone Number</label>
+                                    <input type="tel" id="phone" class="form__input-field form__input-field--sm w-100 rounded-1" value="Value for the form">
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form__input w-100">
+                                    <label for="addition-note" class="form__input-label fs-6">Additional Notes</label>
+                                    <input type="text" id="addition-note" class="form__input-field form__input-field--sm w-100 rounded-1" value="Value for the form">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form__block upload-box__list d-flex flex-wrap">
+                        <label class="upload-box position-relative text-black">
+                           <input type="file" class="visually-hidden upload-input">
+                           <div class="upload-box__wrapper d-flex flex-column align-items-center justify-content-center text-center">
+                              <img src="assets/img/icon/cloud-upload.svg" alt="cloud-upload" class="upload-box__icon">
+                              <span class="upload-box__text d-block">Profile Image</span>
+                           </div>
+                           <div class="preview-img"></div>
+                        </label>
+                     </div>
+                     <div class="form__block">
+                        <div class="form__condition-list d-flex flex-column gap-3">
+                           <div class="form__condition">
+                              <label class="form__condition-label position-relative">
+                                 <input type="checkbox" class="visually-hidden">
+                                 <div class="form__condition-wrap d-flex align-items-start">
+                                    <span class="form__checkbox d-flex align-items-center justify-content-center rounded-1 flex-shrink-0"><i class="fa-regular fa-check"></i></span>
+                                    <span>Send Invite for this member</span>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="form__condition">
+                              <label class="form__condition-label position-relative">
+                                 <input type="checkbox" class="visually-hidden" checked>
+                                 <div class="form__condition-wrap d-flex align-items-start">
+                                    <span class="form__checkbox d-flex align-items-center justify-content-center rounded-1 flex-shrink-0"><i class="fa-regular fa-check"></i></span>
+                                    <span>Send Invite for this member</span>
+                                 </div>
+                              </label>
+                           </div>
+                           <div class="form__condition form__condition--disable">
+                              <label class="form__condition-label position-relative">
+                                 <input type="checkbox" class="visually-hidden" disabled>
+                                 <div class="form__condition-wrap d-flex align-items-start">
+                                    <span class="form__checkbox d-flex align-items-center justify-content-center rounded-1 flex-shrink-0"><i class="fa-regular fa-minus"></i></span>
+                                    <span>Send Invite for this member</span>
+                                 </div>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <div class="theme-btn__wrap d-flex flex-wrap w-100">
+                     <button type="button" class="theme-btn theme-btn--sm d-inline-block rounded-pill">Update your Aadhar</button>
+                     <div class="flex-grow-1">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close" class="theme-btn theme-btn--sm theme-btn--regular d-inline-block rounded-pill">Cancel</button>
+                     </div>
+                     <button type="button" class="theme-btn theme-btn--sm theme-btn--danger d-inline-block rounded-pill">Delete</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- family member modal end -->
+
       <!-- vendor js -->
       <script src="assets/js/jquery-3.7.1.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/choices.min.js"></script>
+      <script src="assets/js/moment.min.js"></script>
+      <script src="assets/js/daterangepicker.js"></script>
       <!-- main js -->
       <script src="assets/js/main.js"></script>
    </body>

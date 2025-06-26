@@ -754,6 +754,19 @@ select:focus {
    width: 50px;
    aspect-ratio: 1 / 1;
 }
+.preview-img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.preview-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
 
 .theme-modal .modal-footer {
    padding: 20px 24px;
@@ -825,7 +838,7 @@ select:focus {
    flex-shrink: 0;
 }
 .medication-item__action-toggle img {
-   width: 36px;
+   width: 18px;
 }
 /* medical history section end */
 
@@ -910,6 +923,11 @@ select:focus {
    background-color: var(--blue);
    color: #fff;
    border-color: var(--blue);
+}
+.file-upload .preview-img img {
+   width: 200px;
+   height: 200px;
+   margin: 0px auto 20px;
 }
 /* property add section start */
 
@@ -1239,3 +1257,27 @@ select:focus {
    width: 45%;
 }
 /* banking section end */
+
+/* choice dropdown style */
+.choices {
+   color: var(--black);
+}
+.choices__inner {
+   background-color: transparent;
+   border-radius: 6px;
+   border-color: var(--border-color);
+   padding: 0 !important;
+   min-height: 40px;
+   vertical-align: middle;
+}
+
+.choices__list--single {
+   padding: 10px 12px;
+}
+.signup .choices__list--single {
+   padding: 12.5px 12px;
+}
+
+.dashboard__block .back-btn {
+   margin-right: -40px;
+}
