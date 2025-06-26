@@ -231,8 +231,10 @@ select:focus {
    font-size: 14px;
    padding-inline: 12px;
 }
-.form__input-field.filled {
+.form__input-field.filled, .form__input-field.filled:focus {
    background-color: #9091961a;
+   border-color: #909196;
+   color: #909196;
 }
 
 .form__input-field::placeholder {
